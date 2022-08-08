@@ -1,0 +1,241 @@
+/*  ===== MOBILE styles (inherited by all devices) ===== 
+/*  ===== See tablet, desktop, and print @media queries at the bottom.
+
+
+/*   ----- Imports  -----  */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+@import '../node_modules/modern-normalize/modern-normalize.css';
+
+
+
+/*   ----- Variables  -----  */
+:root {}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {                     /* Can alternatively define in html {} or :root {} */
+  color:#2D383A;
+  background-color:#E3E8E9;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  max-width: 960px;
+  margin: auto;
+  padding: auto;
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+a:link {}
+a:hover {}
+a:active {}
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  background-color: #708B90;
+  color:  #E3E8E9;
+  border: 3px solid #414A4C;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  padding: 20px;
+  text-decoration: none;
+  vertical-align: auto;
+  
+
+}
+nav a {
+  background-color: #708B90;
+  color:  #E3E8E9;
+  border: none;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 20px;
+  padding-right: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  vertical-align: auto;
+}
+nav a:hover {
+  background-color: #708B90;
+  color:  #D2C7C5;
+  border: none;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 20px;
+  padding-right: 30px;
+  text-decoration: underline;
+  font-weight: 600;
+  vertical-align: auto;
+  text-underline-offset: 8px;
+}
+
+/*  ----- Page layout blocks -----  */
+header, footer {
+  background-color: #2D383A ;
+  color: #E3E8E9;
+  border:  none;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 10px;
+}
+main {
+  color:#2D383A;
+  background-color:#E3E8E9;
+  border: none;
+  padding: 20px;
+}
+section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+    #gallery1 {}
+    #gallery2 {}
+div {}
+aside {}
+
+/*  -----  Typography  ----- */
+p {}
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3, h4, h5, h6 {} /* Define consistant font family.*/
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {}
+
+/*  ----- Table ----- */
+table {
+  border-collapse: collapse;
+  border: 3px solid #414A4C;
+  margin: 10px;
+}
+caption {}
+thead {}
+tbody {}
+tfoot {}
+tr {
+  border: 1px solid #414A4C;
+  padding: 10px;
+}
+th {
+  border: 1px solid #414A4C;
+  padding: 10px;
+}
+td {
+  border: 1px solid #414A4C;
+  padding: 10px;
+}
+colgroup {}
+data {}
+datalist {}
+
+
+/*  ----- Form ----- */
+form {}
+fieldset {
+  display: grid;
+  width: 50%;
+  margin: auto
+}
+  legend {}
+label {}
+  button {
+    margin-top: 5px;
+    padding: 5px 20px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  input {
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 2px;
+  }
+  output {}
+  meter {}
+  progress {}
+  select {}
+    optgroup {}
+    option {}
+  textarea {}
+
+/* ----- Media ----- */
+figure {}
+  figcaption {}
+img {}
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
