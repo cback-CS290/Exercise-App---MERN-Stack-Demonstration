@@ -1,0 +1,33 @@
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Squat",
+    "reps": 12,
+    "weight": 135,
+    "unit": "lbs",
+    "date": 121212
+}
+
+###
+GET http://localhost:3000/exercises HTTP/1.1
+
+###
+GET http://localhost:3000/exercises/630cd155aaf1ab680bcd7d25 HTTP/1.1
+
+###
+
+PUT http://localhost:3000/exercises/630907baaaf1ab680bcd7cbe HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Hack Squat",
+    "reps": 11,
+    "weight": 135,
+    "unit": "lbs",
+    "date": 121212
+}
+
+###
+DELETE http://localhost:3000/exercises/630d012ed54e87dd6e80db29 HTTP/1.1
